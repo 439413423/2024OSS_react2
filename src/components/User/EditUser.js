@@ -22,13 +22,19 @@ const EditUser = ({ user, onClose, onRefresh }) => {
   };
 
   const handleSubmit = async () => {
-    await fetch(apiUrl, {
-      method: 'PUT',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(formData),
-    });
-    onRefresh();
-    onClose();
+    try {
+      const response = await fetch(apiUrl, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+      if (!response.ok) throw new Error("수정 실패");
+      alert("수정 성공");
+      onRefresh();
+      onClose();
+    } catch (error) {
+      alert(error.message);
+    }
   };
 
   return (

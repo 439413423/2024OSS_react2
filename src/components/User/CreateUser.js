@@ -16,13 +16,19 @@ const CreateUser = ({ onClose, onRefresh }) => {
   };
 
   const handleSubmit = async () => {
-    await fetch(apiUrl, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(formData),
-    });
-    onRefresh();
-    onClose();
+    try {
+      const response = await fetch(apiUrl, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+      if (!response.ok) throw new Error("추가 실패");
+      alert("추가 성공");
+      onRefresh();
+      onClose();
+    } catch (error) {
+      alert(error.message);
+    }
   };
 
   return (
