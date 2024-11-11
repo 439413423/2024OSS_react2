@@ -26,37 +26,17 @@ const CreateUser = ({ onClose, onRefresh }) => {
   };
 
   return (
-    <div className="modal show d-block" tabIndex="-1">
-      <div className="modal-dialog">
+    <div className="modal fade show d-block" tabIndex="-1" role="dialog">
+      <div className="modal-dialog" role="document">
         <div className="modal-content">
           <div className="modal-header">
             <h5 className="modal-title">데이터 추가</h5>
             <button type="button" className="btn-close" onClick={onClose}></button>
           </div>
           <div className="modal-body">
-            <input
-              type="text"
-              name="firstName"
-              value={formData.firstName}
-              onChange={handleChange}
-              placeholder="이름"
-              className="form-control mb-2"
-            />
-            <input
-              type="text"
-              name="lastName"
-              value={formData.lastName}
-              onChange={handleChange}
-              placeholder="성"
-              className="form-control mb-2"
-            />
-            <input
-              type="date"
-              name="birthDate"
-              value={formData.birthDate}
-              onChange={handleChange}
-              className="form-control mb-2"
-            />
+            <input type="text" name="firstName" value={formData.firstName} onChange={handleChange} placeholder="이름" className="form-control mb-2" />
+            <input type="text" name="lastName" value={formData.lastName} onChange={handleChange} placeholder="성" className="form-control mb-2" />
+            <input type="date" name="birthDate" value={formData.birthDate} onChange={handleChange} className="form-control mb-2" />
             <select name="gender" value={formData.gender} onChange={handleChange} className="form-control mb-2">
               <option value="남">남</option>
               <option value="여">여</option>
