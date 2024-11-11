@@ -1,0 +1,84 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "firstName": "aaa",
+      "lastName": "Lee",
+      "birthDate": "2002-01-01",
+      "gender": "남",
+      "nationality": "내국인"
+    },
+    {
+      "id": "2",
+      "firstName": "bbb",
+      "lastName": "Kim",
+      "birthDate": "2007-12-06",
+      "gender": "여",
+      "nationality": "내국인"
+    },
+    {
+      "id": "3",
+      "firstName": "ccc",
+      "lastName": "Jhon",
+      "birthDate": "2004-02-28",
+      "gender": "남",
+      "nationality": "외국인"
+    },
+    {
+      "id": "4",
+      "firstName": "ddd",
+      "lastName": "Choi",
+      "birthDate": "1999-10-24",
+      "gender": "여",
+      "nationality": "외국인"
+    },
+    {
+      "id": "5",
+      "firstName": "eee",
+      "lastName": "Lim",
+      "birthDate": "2003-03-30",
+      "gender": "여",
+      "nationality": "내국인"
+    },
+    {
+      "id": "6",
+      "firstName": "fff",
+      "lastName": "Gong",
+      "birthDate": "2012-03-14",
+      "gender": "남",
+      "nationality": "내국인"
+    },
+    {
+      "id": "7",
+      "firstName": "ggg",
+      "lastName": "Na",
+      "birthDate": "2008-11-25",
+      "gender": "남",
+      "nationality": "내국인"
+    },
+    {
+      "id": "8",
+      "firstName": "hhh",
+      "lastName": "Cha",
+      "birthDate": "2004-05-17",
+      "gender": "여",
+      "nationality": "내국인"
+    },
+    {
+      "id": "9",
+      "firstName": "iii",
+      "lastName": "Park",
+      "birthDate": "2001-07-21",
+      "gender": "여",
+      "nationality": "내국인"
+    },
+    {
+      "id": "10",
+      "firstName": "jjj",
+      "lastName": "Hawn",
+      "birthDate": "1992-08-09",
+      "gender": "여",
+      "nationality": "내국인"
+    }
+  ]
+}
